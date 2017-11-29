@@ -1,6 +1,11 @@
 ## Check if data exists
 
-Visit [http://rest.learncode.academy/api/vue-5/friends](http://rest.learncode.academy/api/vue-5/friends) to see the data.
+It's possible that data has been deleted before you run an example and see this tutorial.
+Please check the data:
+
+Visit [http://rest.learncode.academy/api/vue-5/friends](http://rest.learncode.academy/api/vue-5/friends) to see it.
+
+If data isn't there, move to the next chapter and create it!
 
 ## Add data via curl
 
