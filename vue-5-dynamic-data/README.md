@@ -1,7 +1,7 @@
 
 ## Intro
 
-From the video [Vue Tutorial #5 - AJAX data and Lifecycle Methods](https://youtu.be/inJDWcHmsss) notice there is REST service: 
+From the video [Vue Tutorial #5 - AJAX data and Lifecycle Methods](https://youtu.be/inJDWcHmsss) notice we are using a test REST service from rest.learncode.academy: 
 
 `http://rest.learncode.academy/api/vue-5/friends`
 
