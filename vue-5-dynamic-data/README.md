@@ -1,13 +1,14 @@
 
 ## Intro
 
-From the video [Vue Tutorial #5 - AJAX data and Lifecycle Methods](https://youtu.be/inJDWcHmsss) you could notice there is REST service: 
+From the video [Vue Tutorial #5 - AJAX data and Lifecycle Methods](https://youtu.be/inJDWcHmsss) notice there is REST service: 
 
 `http://rest.learncode.academy/api/vue-5/friends`
 
-Infact "vue-5" is only user name. The common link is: 
+"vue-5" is the  user name, "friends" is the collection name.  The first time you try to access this collection, it gets created. 
+So the syntax is: 
 
-`http://rest.learncode.academy/api/{username}/friends`
+`http://rest.learncode.academy/api/{username}/{collection name}`
 
 ## Check if data exists
 
@@ -31,4 +32,4 @@ Open console and run commands:
 
 Then visit [http://rest.learncode.academy/api/someuser/friends](http://rest.learncode.academy/api/someuser/friends) and ensure the data has been added.
 
-NOTE! Use `http://rest.learncode.academy/api/someuser/friends` in you main.js
+NOTE! Use `http://rest.learncode.academy/api/someuser/friends` in your main.js
