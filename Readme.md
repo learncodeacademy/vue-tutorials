@@ -27,3 +27,9 @@ Vue.js 7: https://www.youtube.com/watch?v=IkcJ0YAiycQ
 Vue.js 8: https://www.youtube.com/watch?v=mY2MiaYiSdw
 
 Vue.js 9: https://www.youtube.com/watch?v=mS9-fTrgjrA
+
+## Дополнительно ##
+
+С чего начать изучение Vue.js?
+
+http://webdev2018.blogspot.ru/2018/02/start-with-vue.html
