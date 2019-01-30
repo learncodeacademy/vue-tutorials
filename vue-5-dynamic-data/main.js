@@ -2,9 +2,25 @@ const app = new Vue({
     el: "#app",
     data: {
       editFriend: null,
+      friendname: "",
+      newFriend: false,
       friends: [],
     },
     methods: {
+      addFriend(friend) {
+      	this.friends.push({'name' : friend});
+      	this.friendname = "";
+      	this.newFriend = false;
+
+        fetch("http://rest.learncode.academy/api/vue-5/friends/", {
+          body: JSON.stringify({'name' : friend}),
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+      },
+
       deleteFriend(id, i) {
         fetch("http://rest.learncode.academy/api/vue-5/friends/" + id, {
           method: "DELETE"
@@ -13,6 +29,7 @@ const app = new Vue({
           this.friends.splice(i, 1);
         })
       },
+
       updateFriend(friend) {
         fetch("http://rest.learncode.academy/api/vue-5/friends/" + friend.id, {
           body: JSON.stringify(friend),
@@ -46,6 +63,11 @@ const app = new Vue({
           {{friend.name}}
         </div>
       </li>
+      <div><button v-on:click="newFriend = true">Add</button></div>
+      <div v-if="newFriend === true">
+          <input v-model="friendname" v-on:keyup.13="addFriend(friendname)" />
+          <button v-on:click="addFriend(friendname)">save</button>
+      </div>
     </div>
     `,
 });
